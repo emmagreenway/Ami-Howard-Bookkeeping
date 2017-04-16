@@ -1,19 +1,4 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="emmagreenwaygraphics@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <title>Howard Bookkeeping</title>
     <head>
@@ -33,7 +18,7 @@ if($_POST["submit"]) {
                 <img src="Img/image.png" height="350px" width="auto">
             </div>
             <div  id="well-2"class=" grid_7 well">
-                <form method="post" action="contact.php">
+                <form method="POST" action="http://formspree.io/howardbookkeeping@yahoo.com">
                     First Name:<br>
                     <input type="text" value="First Name"><br>
                     Last name:<br>
