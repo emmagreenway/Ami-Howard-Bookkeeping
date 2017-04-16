@@ -33,19 +33,21 @@ if($_POST["submit"]) {
                 <img src="Img/image.png" height="350px" width="auto">
             </div>
             <div  id="well-2"class=" grid_7 well">
-                <form method="post" action="contact.php">
-                    First Name:<br>
-                    <input type="text" value="First Name"><br>
-                    Last name:<br>
-                    <input type="text" name="sender" value="Last Name"><br>
-                    Contact Number:<br>
-                    <input type="text" value="&#43;44"><br>
-                    Contact Email:<br>
-                    <input type="text" name="senderEmail" value="johnsmith@gmail.com"><br><br>
-                    Message:<br>
-                    <textarea cols="70" rows="10" name="messege" height="200px" width="auto" class="textarea" >Write your message here.</textarea><br><br>
-                    <input type="submit" name="submit" value="Submit">
-                    
+                <form 
+                      action="mailto:emmagreenwaygraphics@gmail.com"
+                      method="POST"
+                      enctype="multipart/form-data"
+                      name="EmailTestForm">
+
+                    Your Name:<br>
+                    <input type="text" size="20" name="VisitorName"><br><br>
+
+                    Your Comment:<br>
+                    <textarea name="VisitorComment" rows="4" cols="20">
+                    </textarea><br><br>
+
+                    <input type="submit" value="Email This Form">
+
                 </form>
             </div>
         </div>
